@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\markn\OneDrive\Área de Trabalho\Curso Fatec DSM\2 Semestre\Téc. de Programação\Ex. Aulas\Aula1_Placar\Aula_Zoologico\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+4291139416.index
+3314884422.index

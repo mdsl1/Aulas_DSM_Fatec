@@ -1,0 +1,5 @@
+package animais;
+
+public class homemMacaco extends animal{
+	public void correrAtrasDeMim() {
+}

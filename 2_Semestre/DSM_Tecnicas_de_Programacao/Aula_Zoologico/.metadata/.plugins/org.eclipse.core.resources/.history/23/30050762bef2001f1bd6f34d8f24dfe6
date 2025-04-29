@@ -1,0 +1,18 @@
+package sistema;
+
+import java.util.ArrayList;
+import animals.Animal;
+
+public class Principal {
+	
+	public static void main(String args[]) {
+		// ArrayList<tipo> nomeVar = new ArrayList<>();
+		ArrayList<Animal> criaturas = new ArrayList<>();	
+		
+		while(true) {
+			System.out.println("O que vocÊ quer fazer?");
+			System.out.println("1 - Registrar Animal\n2- Visitar Zoológico");
+			int op = sc.nextInt();
+		}
+	}
+}

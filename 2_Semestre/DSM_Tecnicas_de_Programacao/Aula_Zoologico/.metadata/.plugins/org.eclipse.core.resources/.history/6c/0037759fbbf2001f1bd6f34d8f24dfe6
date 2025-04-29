@@ -1,0 +1,13 @@
+package animals;
+
+public class Capivara extends Animal {
+
+	public Capivara(String n, boolean f, String c, boolean t) {
+		super(n,f,c,t);
+	}
+	
+	@Override
+	public String fazSom() {
+		return "glup glup ronc ronc";
+	}
+}

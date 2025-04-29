@@ -1,0 +1,17 @@
+package dados;
+
+public class LivroDigital extends Livro {
+	
+	private float tamMB;
+
+	//Getters e Setters
+	public float getTamMB() {
+		return tamMB;
+	}
+
+	public void setTamMB(float tamMB) {
+		this.tamMB = tamMB;
+	}
+	
+
+}

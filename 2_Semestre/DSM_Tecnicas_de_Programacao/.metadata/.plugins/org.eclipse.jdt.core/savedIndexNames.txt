@@ -1,0 +1,10 @@
+INDEX VERSION 1.134+C:\Users\markn\OneDrive\Área de Trabalho\Curso Fatec DSM\2 Semestre\Téc. de Programação\Ex. Aulas\.metadata\.plugins\org.eclipse.jdt.core
+1831022472.index
+1204385438.index
+1865797976.index
+2426981954.index
+3920492869.index
+3314884422.index
+2076777803.index
+4206933736.index
+4291139416.index

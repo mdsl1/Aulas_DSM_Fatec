@@ -1,0 +1,50 @@
+package sistema;
+
+import java.util.Scanner;
+import java.util.ArrayList;
+import dados.Livro;
+import dados.LivroDigital;
+
+public class TelaPrincipal {
+	
+	public static void main(String args[]) {
+		int opt = 0;
+		ArrayList<Livro> livros = new ArrayList<>();
+		Scanner sc = new Scanner(System.in);
+		
+		while(true) {
+			System.out.println("Qual ação você deseja realizar?");
+			System.out.println("1 - Cadastrar Livro");
+			System.out.println("2 - Listar Livros Cadastrados");
+			opt = Integer.parseInt(sc.nextLine());
+			
+			if(opt == 1) {
+				System.out.println("Título do Livro:");
+					String tit = sc.nextLine();
+				System.out.println("Autor do Livro:");
+					String aut = sc.nextLine();
+				System.out.println("Número de Páginas:");
+					int nPags = Integer.parseInt(sc.nextLine());
+				System.out.println("Tamanho em MB (0 se não existir):");
+					float tmb = Float.parseFloat(sc.nextLine());
+				
+				Livro l = null;
+				
+				if(tmb == 0) {
+					l = new Livro(tit, aut, nPags);
+				}
+				else {
+					l = new LivroDigital(tit, aut, nPags, tmb);
+				}
+				livros.add(l);
+			}
+			else if (opt == 2){
+				System.out.println("===== Livros Cadastrados =====");
+				for(int i = 0; i<livros.size(); i+=1) {
+					System.out.println(livros.get(i));
+					
+				}
+			}
+		}
+	}
+}

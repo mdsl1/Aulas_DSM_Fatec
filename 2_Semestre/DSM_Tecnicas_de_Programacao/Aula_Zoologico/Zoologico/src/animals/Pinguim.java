@@ -1,0 +1,13 @@
+package animals;
+
+public class Pinguim extends Animal{
+
+	public Pinguim(String n, boolean f, String c, boolean t) {
+		super(n,f,c,t);
+	}
+	
+	@Override
+	public String fazSom() {
+		return "Honk honk nip nip!";
+	}
+}

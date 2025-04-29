@@ -1,0 +1,7 @@
+package animais;
+
+public class Animal {
+	private String nome;
+	
+	public abstract String som();
+}

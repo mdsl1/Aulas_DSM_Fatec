@@ -1,0 +1,31 @@
+package dados;
+
+public class LivroDigital extends Livro {
+	
+	private float tamMB;
+
+	public LivroDigital(String t, String a, int n, float tmb) {
+		super(t,a,n);
+		this.setTamMB(tmb);
+	}
+	
+	//Getters e Setters
+	public float getTamMB() {
+		return tamMB;
+	}
+	public void setTamMB(float tamMB) {
+		this.tamMB = tamMB;
+	}
+	
+	@Override
+	public String toString() {
+
+		String detLivro= super.toString();
+		
+		detLivro += "Tamanho em MB: " + Float.toString(this.getTamMB()) + "\n";
+		
+		return detLivro;
+	}
+	
+	
+}

@@ -1,0 +1,6 @@
+package animals;
+
+public class Leao extends Animal{
+	public Leao(String n, boolean f, String c, boolean t)
+	
+}

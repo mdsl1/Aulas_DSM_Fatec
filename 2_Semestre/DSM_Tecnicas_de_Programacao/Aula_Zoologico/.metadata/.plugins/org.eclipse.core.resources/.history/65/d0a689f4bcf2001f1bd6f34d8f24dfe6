@@ -1,0 +1,12 @@
+package sistema;
+
+import java.util.ArrayList;
+import animals.Animal;
+
+public class Principal {
+	
+	public static void main(String args[]) {
+		// ArrayList<tipo> nomeVar = new ArrayList<>();
+		ArrayList<Animal> criaturas = new ArrayList<>();	
+	}
+}

@@ -1,0 +1,44 @@
+package main_system;
+
+import java.util.Scanner;
+import score.BasicScore;
+import score.FutsalScore;
+
+
+//Tela do meu placar
+public class WindowSystem {
+
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Sigla Time A: ");
+		String nameA = sc.nextLine();
+		System.out.println("Sigla Time B: ");
+		String nameB = sc.nextLine();
+		sc.close();
+		System.out.println("Iniciando o sistema.");
+		FutsalScore pb = new FutsalScore(nameA,nameB);
+		
+		int stop = 0;
+		while (stop == 0) {
+			System.out.println(pb.show());
+			System.out.println("Digite a opção:  ");
+			System.out.println("1 - Marcar gol   ");
+			System.out.println("2 - Marcar cartão");
+			System.out.println("3 - Sair");
+			int opt = sc.nextInt();
+			if (opt == 1) {
+				System.out.printf("Qual time marcou o gol? (1 - %s;2 - %s)\n",nameA,nameB);
+				int point = sc.nextInt();
+				pb.addPoint(point);
+			} else if (opt == 2) {
+				System.out.printf("Qual time tomou o cartão? (1 - %s;2 - %s)\n",nameA,nameB);
+				int point = sc.nextInt();
+				pb.giveCard(point);
+				
+			} else {
+				stop = 1;
+			}
+		}
+	}
+}
